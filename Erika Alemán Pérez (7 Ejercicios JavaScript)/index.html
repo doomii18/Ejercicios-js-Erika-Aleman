@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+<link rel="stylesheet" href="estilo.css">
+  <title>Ejercicios Prácticos JavaScript</title>
+</head>
+<body>
+
+<h1>Programacion Web II, Ejercicios Prácticos de JavaScript</h1>
+
+    <div  class="contenedor">
+  <h2>Calcular total con IVA</h2>
+
+  <label>Precio del producto(C$):</label><br>
+  <input type="number" id="precioinicial" value="200"><br><br>
+
+  <label>IVA (%):</label><br>
+  <input type="number" id="IVAProducto" value="15"><br><br>
+
+  <button onclick="calcularTotalConIva()">Calcular total</button>
+
+  <p id="CostoFinal"></p>
+</div>
+
+<hr>
+
+  <div class="contenedor">
+    <h2>Calcular Área y Perímetro, cuando el perimetro es 160</h2>
+
+    <label>Lados del cuadrado (cm):</label>
+    <input type="number" id="lados" value="40">
+
+    <button onclick="calcularLADOSdelCuadrado()">Calcular</button>
+
+    <p id="resultado"></p>
+  </div>
+
+
+<hr>
+ <div class="contenedor">
+  <h2>Saludo interactivo</h2>
+  <button onclick="saludar()">Saludar</button>
+  <p id="mensaje"></p>
+</div>
+<hr>
+
+ <div class="contenedor">
+    <h2>Calcular media de tres números</h2>
+
+    <label for="num1">Número 1:</label>
+    <input type="number" id="num1" />
+
+    <label for="num2">Número 2:</label>
+    <input type="number" id="num2" />
+
+    <label for="num3">Número 3:</label>
+    <input type="number" id="num3" />
+
+    <button onclick="calcularMedia()">Calcular media</button>
+
+    <p id="resultadomedia"></p>
+  </div>
+
+  <hr>
+  <div class="contenedor">
+    <h2>Consumo de tu vehículo</h2>
+
+    <label for="litrosUsados">Litros de combustible utilizados:</label>
+    <input type="number" id="litrosUsados" placeholder="Ej: 20">
+
+    <label for="kmsRecorridos">Kilómetros que recorriste:</label>
+    <input type="number" id="kmsRecorridos" placeholder="Ej: 80">
+
+    <button onclick="calcularConsumoPersonalizado()">Mostrar consumo por kilómetro</button>
+
+    <p id="resultadodelconsumo"></p>
+    </div>
+<hr> 
+  
+ <div class="contenedor">
+    <h2>Convertir horas y minutos a segundos</h2>
+
+    <label for="horas">Horas:</label>
+    <input type="number" id="horas" placeholder="Ej: 2" />
+
+    <label for="minutos">Minutos:</label>
+    <input type="number" id="minutos" placeholder="Ej: 30" />
+
+    <button onclick="convertirASegundos()">Calcular segundos</button>
+
+    <p id="resultadodeconversion"></p>
+  </div>
+<hr>
+
+<div class="contenedor">
+    <h2>Extraer Unidades y decenas</h2>
+    <label for="numeroIngresado">Numero de 2 cifras: </label>
+    <input type="number" id="numeroIngresado" placeholder="Ej:45"/>
+    <button onclick="cifrasseparadas()"> Calcular Unidades y Decenas</button>
+
+    <p id="resultadodecifras"></p>
+    </div>
+
+
+  <script src="./JS/7ejercicios.js"></script>
+
+<footer class="footer">
+  <p>Ejercicios Practicos JavaScript. Erika Daniela Alemán Pérez </p>
+</footer></body>
+</html>
